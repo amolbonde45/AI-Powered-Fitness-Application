@@ -1,0 +1,13 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.AI.Powered.Fitness</groupId>
+    <artifactId>ai-fitness-parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>UserService</module>
+        <module>ActivityService</module>
+    </modules>
+</project>
