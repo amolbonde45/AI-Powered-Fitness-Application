@@ -16,11 +16,17 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.44/lombok-1.18.44.jar" />
         </processorPath>
         <module name="UserService" />
+        <module name="ActivityService" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ActivityService (1)" target="21" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ActivityService" options="-parameters" />
+      <module name="ActivityService (1)" options="-parameters" />
       <module name="UserService" options="-parameters" />
     </option>
   </component>

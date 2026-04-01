@@ -1,0 +1,22 @@
+package com.AI_Powered_Fitness_App.ActivityService.DTO;
+
+import com.AI_Powered_Fitness_App.ActivityService.Model.ActivityType;
+import lombok.Data;
+
+import java.time.LocalDateTime;
+import java.util.Map;
+
+@Data
+public class ActivityResponse {
+
+    private Long id;
+    private String userId;
+    private ActivityType type;
+    private Integer duration;
+    private Integer caloriesBurned;
+    private LocalDateTime startTime;
+    private Map<String,Object> additionalMetrics;
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
+
+}
