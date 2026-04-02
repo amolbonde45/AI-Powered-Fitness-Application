@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="EurekaServer" />
       </profile>
       <profile name="Annotation profile for ai-fitness-parent" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -15,8 +16,17 @@
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.44/lombok-1.18.44.jar" />
         </processorPath>
-        <module name="UserService" />
         <module name="ActivityService" />
+      </profile>
+      <profile name="Annotation profile for UserService" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.44/lombok-1.18.44.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.44/lombok-1.18.44.jar" />
+        </processorPath>
+        <module name="UserService" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -27,6 +37,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ActivityService" options="-parameters" />
       <module name="ActivityService (1)" options="-parameters" />
+      <module name="EurekaServer" options="-parameters" />
       <module name="UserService" options="-parameters" />
     </option>
   </component>

@@ -9,5 +9,6 @@
     <modules>
         <module>UserService</module>
         <module>ActivityService</module>
+        <module>EurekaServer</module>
     </modules>
 </project>
