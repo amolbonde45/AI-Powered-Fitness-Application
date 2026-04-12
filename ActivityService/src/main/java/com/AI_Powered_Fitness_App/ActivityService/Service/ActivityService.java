@@ -5,6 +5,7 @@ import com.AI_Powered_Fitness_App.ActivityService.DTO.ActivityRequest;
 import com.AI_Powered_Fitness_App.ActivityService.DTO.ActivityResponse;
 import com.AI_Powered_Fitness_App.ActivityService.Model.Activity;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.jspecify.annotations.Nullable;
 import org.springframework.stereotype.Service;
 
@@ -12,14 +13,21 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class ActivityService {
 
-    private ActivityRepository activityRepository;
+    private  final ActivityRepository activityRepository;
+    private final UserValidateService userValidateService;
 
     public ActivityResponse trackActivity(
             ActivityRequest request
     ) {
+
+        boolean isValidUser = userValidateService.validateUser( request.getUserId() );
+
+        if(!isValidUser){
+            throw new RuntimeException( "User is not valid " + request.getUserId() );
+        }
         Activity activity = Activity.builder()
                 .userId(request.getUserId())
                 .type(request.getType())

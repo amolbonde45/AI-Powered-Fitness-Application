@@ -5,6 +5,7 @@ import com.AI_Powered_Fitness_App.UserService.DTO.UserResponse;
 import com.AI_Powered_Fitness_App.UserService.Repository.UserRepository;
 import com.AI_Powered_Fitness_App.UserService.model.User;
 import lombok.AllArgsConstructor;
+import org.jspecify.annotations.Nullable;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -55,5 +56,9 @@ public class UserService {
 
         return userResponse;
 
+    }
+
+    public Boolean existByUserId(String userId) {
+        return userRepository.existsById(userId);
     }
 }

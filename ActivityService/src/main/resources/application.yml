@@ -1,6 +1,6 @@
 spring:
   application:
-    name: ActivtyService
+    name: Activty-Service
 
   datasource:
     url: jdbc:postgresql://localhost:5432/fitness_user_db
@@ -13,5 +13,10 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
 
-  server :
+server :
     port : 8081
+
+eureka :
+  client:
+    service-url:
+      defaultZone : http://localhost:8761/eureka/

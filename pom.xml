@@ -10,5 +10,6 @@
         <module>UserService</module>
         <module>ActivityService</module>
         <module>EurekaServer</module>
+        <module>AIService</module>
     </modules>
 </project>

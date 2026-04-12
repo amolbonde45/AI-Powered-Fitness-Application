@@ -16,7 +16,7 @@ public class ActivityController {
 
     private final ActivityService activityService;
 
-    @PostMapping("/trackActivity")
+    @PostMapping("/activitys")
     public ResponseEntity<ActivityResponse> trackActivity(
         @RequestBody ActivityRequest request
     ){
