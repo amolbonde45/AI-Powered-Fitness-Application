@@ -65,6 +65,12 @@
             <scope>runtime</scope>
         </dependency>
 
+        <!-- Rabbit mq    -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+
         <!-- Lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>

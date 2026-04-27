@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="EurekaServer" />
         <module name="ActivityService" />
+        <module name="AIService" />
       </profile>
       <profile name="Annotation profile for ai-fitness-parent" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -26,6 +27,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="AIService" options="-parameters" />
       <module name="ActivityService" options="-parameters" />
       <module name="ActivityService (1)" options="-parameters" />
       <module name="EurekaServer" options="-parameters" />
