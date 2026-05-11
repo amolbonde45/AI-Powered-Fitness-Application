@@ -1,19 +1,16 @@
-server:
-  port: 8082
+server :
+  port : 8081
 
 spring:
-  application:
-    name: ai-service
-
   datasource:
     url: jdbc:postgresql://localhost:5432/fitness_user_db
     username: postgres
     password: root
   rabbitmq:
-     host: localhost
-     port: 5672
-     username: guest
-     password: guest
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 
 
   jpa:
@@ -34,8 +31,3 @@ rabbitmq:
     name: activity.queue
   routing:
     key: activity.tracking
-
-gemini:
-  api:
-    url: ${GEMINI_API_URL}
-    key: ${GEMINI_API_KEY}

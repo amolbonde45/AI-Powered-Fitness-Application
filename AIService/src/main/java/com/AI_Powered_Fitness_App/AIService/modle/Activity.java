@@ -9,6 +9,7 @@ public class Activity {
 
     private Long id;
     private String userId;
+    private String type;
     private Integer duration;
     private Integer caloriesBurned;
     private LocalDateTime startTime;
