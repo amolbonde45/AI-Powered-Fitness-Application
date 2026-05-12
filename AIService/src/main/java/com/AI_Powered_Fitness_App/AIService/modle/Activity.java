@@ -7,7 +7,7 @@ import java.util.Map;
 @Data
 public class Activity {
 
-    private Long id;
+    private String id;
     private String userId;
     private String type;
     private Integer duration;

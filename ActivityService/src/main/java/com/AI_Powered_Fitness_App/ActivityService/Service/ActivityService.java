@@ -60,7 +60,7 @@ public class ActivityService {
             Activity activity
     ){
         ActivityResponse response = new ActivityResponse();
-        response.setId(activity.getId());;
+        response.setId(activity.getId());
         response.setUserId(activity.getUserId());
         response.setType(activity.getType());
         response.setDuration(activity.getDuration());
