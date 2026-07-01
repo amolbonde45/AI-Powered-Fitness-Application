@@ -10,6 +10,7 @@
         <module name="EurekaServer" />
         <module name="ActivityService" />
         <module name="ConfigServer" />
+        <module name="Gateway" />
         <module name="AIService" />
       </profile>
       <profile name="Annotation profile for ai-fitness-parent" enabled="true">
@@ -33,6 +34,7 @@
       <module name="ActivityService (1)" options="-parameters" />
       <module name="ConfigServer" options="-parameters" />
       <module name="EurekaServer" options="-parameters" />
+      <module name="Gateway" options="-parameters" />
       <module name="UserService" options="-parameters" />
     </option>
   </component>

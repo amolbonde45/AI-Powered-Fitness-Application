@@ -1,6 +1,5 @@
-package com.AI_Powered_Fitness_App.UserService.DTO;
+package com.AI_Powered_Fitness_App.Gateway;
 
-import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
